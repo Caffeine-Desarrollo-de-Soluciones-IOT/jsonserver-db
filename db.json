@@ -1,22 +1,4 @@
 {
-  "device_type": [
-    {
-      "id": 1,
-      "type": "Camera"
-    },
-    {
-      "id": 2,
-      "type": "Sensor"
-    },
-    {
-      "id": 3,
-      "type": "Alarm"
-    },
-    {
-      "id": 4,
-      "type": "Door Lock"
-    }
-  ],
   "user": [
     {
       "id": 1,
@@ -26,7 +8,7 @@
       "password": "password123",
       "phone": "1234567890",
       "dni": "12345678",
-      "rols_id": 1,
+      "rols_id": "Admin",
       "subscriptions": [
         {
           "id": 1,
@@ -44,7 +26,7 @@
           "amount": 180,
           "payment_method": "Credit Card",
           "transaction_id": "ABC123",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         },
         {
           "id": 2,
@@ -52,7 +34,7 @@
           "amount": 180,
           "payment_method": "PayPal",
           "transaction_id": "DEF456",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         }
       ],
       "property": [
@@ -68,7 +50,7 @@
               "title": "Sensor Activado",
               "description": "Sensor de movimiento activado en Living Room",
               "timestamp": "2024-09-24T10:30:00Z",
-              "event_type_id": 1,
+              "event_type_id": "Sensor Activado",
               "property_id": 1
             },
             {
@@ -76,7 +58,7 @@
               "title": "Acceso Denegado",
               "description": "Intento de acceso denegado en la cerradura de la puerta principal",
               "timestamp": "2024-09-24T12:00:00Z",
-              "event_type_id": 2,
+              "event_type_id": "Acceso Denegado",
               "property_id": 1
             }
           ],
@@ -91,14 +73,14 @@
                 {
                   "id": 1,
                   "description": "Outdoor Camera",
-                  "type_device_id": 1,
+                  "type_device_id": "Camera",
                   "user_id": 1,
                   "area_id": 1
                 },
                 {
                   "id": 2,
                   "description": "Indoor Camera",
-                  "type_device_id": 1,
+                  "type_device_id": "Camera",
                   "user_id": 1,
                   "area_id": 1
                 }
@@ -114,7 +96,7 @@
                 {
                   "id": 3,
                   "description": "Motion Sensor",
-                  "type_device_id": 2,
+                  "type_device_id": "Sensor",
                   "user_id": 1,
                   "area_id": 2
                 }
@@ -126,14 +108,14 @@
       "notifications": [
         {
           "id": 1,
-          "type_id": 1,
+          "type_id": "Sensor Activado",
           "content": "Sensor de movimiento activado en Living Room",
           "is_read": false,
           "user_id": 1
         },
         {
           "id": 2,
-          "type_id": 2,
+          "type_id": "Acceso Denegado",
           "content": "Intento de acceso denegado en la cerradura de la puerta principal",
           "is_read": true,
           "user_id": 1
@@ -148,7 +130,7 @@
       "password": "password123",
       "phone": "0987654321",
       "dni": "87654321",
-      "rols_id": 1,
+      "rols_id": "Admin",
       "subscriptions": [
         {
           "id": 2,
@@ -166,7 +148,7 @@
           "amount": 250,
           "payment_method": "Credit Card",
           "transaction_id": "ABC456",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         },
         {
           "id": 4,
@@ -174,7 +156,7 @@
           "amount": 250,
           "payment_method": "Stripe",
           "transaction_id": "DEF789",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         }
       ],
       "property": [
@@ -190,7 +172,7 @@
               "title": "Bloqueo Asegurado",
               "description": "Cerradura de la puerta principal asegurada correctamente",
               "timestamp": "2024-09-24T14:00:00Z",
-              "event_type_id": 3,
+              "event_type_id": "Bloqueo Asegurado",
               "property_id": 2
             },
             {
@@ -198,7 +180,7 @@
               "title": "Dispositivo Requiere Mantenimiento",
               "description": "La cámara del patio requiere mantenimiento",
               "timestamp": "2024-09-25T08:00:00Z",
-              "event_type_id": 4,
+              "event_type_id": "Dispositivo Requiere Mantenimiento",
               "property_id": 2
             }
           ],
@@ -213,14 +195,14 @@
                 {
                   "id": 4,
                   "description": "Smart Alarm",
-                  "type_device_id": 3,
+                  "type_device_id": "Alarm",
                   "user_id": 2,
                   "area_id": 3
                 },
                 {
                   "id": 5,
                   "description": "Door Lock",
-                  "type_device_id": 4,
+                  "type_device_id": "Door Lock",
                   "user_id": 2,
                   "area_id": 3
                 }
@@ -236,14 +218,14 @@
                 {
                   "id": 6,
                   "description": "Window Sensor",
-                  "type_device_id": 2,
+                  "type_device_id": "Sensor",
                   "user_id": 3,
                   "area_id": 4
                 },
                 {
                   "id": 7,
                   "description": "Garage Door Lock",
-                  "type_device_id": 4,
+                  "type_device_id": "Door Lock",
                   "user_id": 3,
                   "area_id": 4
                 }
@@ -255,14 +237,14 @@
       "notifications": [
         {
           "id": 3,
-          "type_id": 3,
+          "type_id": "Bloqueo Asegurado",
           "content": "Cerradura de la puerta principal asegurada correctamente",
           "is_read": false,
           "user_id": 2
         },
         {
           "id": 4,
-          "type_id": 4,
+          "type_id": "Dispositivo Requiere Mantenimiento",
           "content": "La cámara del patio requiere mantenimiento",
           "is_read": true,
           "user_id": 2
@@ -277,7 +259,7 @@
       "password": "password123",
       "phone": "1230987654",
       "dni": "43215678",
-      "rols_id": 1,
+      "rols_id": "Admin",
       "subscriptions": [
         {
           "id": 3,
@@ -295,7 +277,7 @@
           "amount": 350,
           "payment_method": "Credit Card",
           "transaction_id": "ABC789",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         }
       ],
       "property": [
@@ -334,7 +316,7 @@
                 {
                   "id": 8,
                   "description": "Backyard Camera",
-                  "type_device_id": 1,
+                  "type_device_id": "Camera",
                   "user_id": 4,
                   "area_id": 5
                 }
@@ -350,14 +332,14 @@
                 {
                   "id": 9,
                   "description": "Smoke Detector",
-                  "type_device_id": 3,
+                  "type_device_id": "Alarm",
                   "user_id": 4,
                   "area_id": 6
                 },
                 {
                   "id": 10,
                   "description": "Smart Light Sensor",
-                  "type_device_id": 2,
+                  "type_device_id": "Sensor",
                   "user_id": 5,
                   "area_id": 6
                 }
@@ -369,14 +351,14 @@
       "notifications": [
         {
           "id": 5,
-          "type_id": 1,
+          "type_id": "Sensor Activado",
           "content": "Sensor de ventana activado en el Garage",
           "is_read": false,
           "user_id": 3
         },
         {
           "id": 6,
-          "type_id": 2,
+          "type_id": "Acceso Denegado",
           "content": "Intento de acceso denegado en la puerta trasera",
           "is_read": true,
           "user_id": 3
@@ -391,7 +373,7 @@
       "password": "password123",
       "phone": "3216549870",
       "dni": "23456789",
-      "rols_id": 1,
+      "rols_id": "Admin",
       "subscriptions": [
         {
           "id": 4,
@@ -409,7 +391,7 @@
           "amount": 180,
           "payment_method": "PayPal",
           "transaction_id": "GHI123",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         },
         {
           "id": 7,
@@ -417,7 +399,7 @@
           "amount": 180,
           "payment_method": "Stripe",
           "transaction_id": "GHI456",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         }
       ],
       "property": [
@@ -433,7 +415,7 @@
               "title": "Bloqueo Asegurado",
               "description": "Cerradura del garaje asegurada correctamente",
               "timestamp": "2024-09-26T07:20:00Z",
-              "event_type_id": 3,
+              "event_type_id": "Bloqueo Asegurado",
               "property_id": 4
             },
             {
@@ -441,7 +423,7 @@
               "title": "Dispositivo Requiere Mantenimiento",
               "description": "El sensor de humo en la cocina requiere mantenimiento",
               "timestamp": "2024-09-26T15:10:00Z",
-              "event_type_id": 4,
+              "event_type_id": "Dispositivo Requiere Mantenimiento",
               "property_id": 4
             }
           ],
@@ -456,7 +438,7 @@
                 {
                   "id": 11,
                   "description": "Front Door Camera",
-                  "type_device_id": 1,
+                  "type_device_id": "Camera",
                   "user_id": 5,
                   "area_id": 7
                 }
@@ -472,14 +454,14 @@
                 {
                   "id": 12,
                   "description": "Garage Door Camera",
-                  "type_device_id": 1,
+                  "type_device_id": "Camera",
                   "user_id": 6,
                   "area_id": 8
                 },
                 {
                   "id": 13,
                   "description": "Smart Lock",
-                  "type_device_id": 4,
+                  "type_device_id": "Door Lock",
                   "user_id": 6,
                   "area_id": 8
                 }
@@ -491,14 +473,14 @@
       "notifications": [
         {
           "id": 7,
-          "type_id": 3,
+          "type_id": "Bloqueo Asegurado",
           "content": "Cerradura del garaje asegurada correctamente",
           "is_read": false,
           "user_id": 4
         },
         {
           "id": 8,
-          "type_id": 4,
+          "type_id": "Dispositivo Requiere Mantenimiento",
           "content": "El sensor de humo en la cocina requiere mantenimiento",
           "is_read": true,
           "user_id": 4
@@ -513,7 +495,7 @@
       "password": "password123",
       "phone": "9876543210",
       "dni": "34567890",
-      "rols_id": 1,
+      "rols_id": "Admin",
       "subscriptions": [
         {
           "id": 5,
@@ -531,7 +513,7 @@
           "amount": 250,
           "payment_method": "PayPal",
           "transaction_id": "GHI789",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         },
         {
           "id": 9,
@@ -539,7 +521,7 @@
           "amount": 250,
           "payment_method": "Stripe",
           "transaction_id": "JKL123",
-          "payments_status_id": 1
+          "payments_status_id": "Completed"
         }
       ],
       "property": [
@@ -555,7 +537,7 @@
               "title": "Sensor Activado",
               "description": "Sensor de movimiento activado en el Front Yard",
               "timestamp": "2024-09-27T10:00:00Z",
-              "event_type_id": 1,
+              "event_type_id": "Sensor Activado",
               "property_id": 5
             },
             {
@@ -563,7 +545,7 @@
               "title": "Acceso Denegado",
               "description": "Intento de acceso denegado en la puerta principal",
               "timestamp": "2024-09-27T13:00:00Z",
-              "event_type_id": 2,
+              "event_type_id": "Acceso Denegado",
               "property_id": 5
             }
           ],
@@ -578,15 +560,15 @@
                 {
                   "id": 14,
                   "description": "Security Alarm",
-                  "type_device_id": 3,
-                  "user_id": 7,
+                  "type_device_id": "Alarm",
+                  "user_id": 5,
                   "area_id": 9
                 },
                 {
                   "id": 15,
                   "description": "Window Sensor",
-                  "type_device_id": 2,
-                  "user_id": 7,
+                  "type_device_id": "Sensor",
+                  "user_id": 5,
                   "area_id": 9
                 }
               ]
@@ -597,47 +579,19 @@
       "notifications": [
         {
           "id": 9,
-          "type_id": 1,
+          "type_id": "Sensor Activado",
           "content": "Sensor de movimiento activado en el Front Yard",
           "is_read": false,
           "user_id": 5
         },
         {
           "id": 10,
-          "type_id": 2,
+          "type_id": "Acceso Denegado",
           "content": "Intento de acceso denegado en la puerta principal",
           "is_read": true,
           "user_id": 5
         }
       ]
-    }
-  ],
-  "rols": [
-    {
-      "id": 1,
-      "type": "Admin"
-    },
-    {
-      "id": 2,
-      "type": "User"
-    }
-  ],
-  "event_type": [
-    {
-      "id": 1,
-      "type": "Sensor Activado"
-    },
-    {
-      "id": 2,
-      "type": "Acceso Denegado"
-    },
-    {
-      "id": 3,
-      "type": "Bloqueo Asegurado"
-    },
-    {
-      "id": 4,
-      "type": "Dispositivo Requiere Mantenimiento"
     }
   ],
   "subscription_plans": [
@@ -655,34 +609,6 @@
       "id": 3,
       "subscription_plan": "Gold Plan",
       "price": 350
-    }
-  ],
-  "notification_type": [
-    {
-      "id": 1,
-      "type": "Sensor Activado"
-    },
-    {
-      "id": 2,
-      "type": "Acceso Denegado"
-    },
-    {
-      "id": 3,
-      "type": "Bloqueo Asegurado"
-    },
-    {
-      "id": 4,
-      "type": "Dispositivo Requiere Mantenimiento"
-    }
-  ],
-  "payments_status": [
-    {
-      "id": 1,
-      "status": "Completed"
-    },
-    {
-      "id": 2,
-      "status": "Pending"
     }
   ]
 }
