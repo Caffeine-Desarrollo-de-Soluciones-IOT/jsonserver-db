@@ -27,14 +27,6 @@
           "payment_method": "Credit Card",
           "transaction_id": "ABC123",
           "payments_status_id": "Completed"
-        },
-        {
-          "id": 2,
-          "subscription_id": 1,
-          "amount": 180,
-          "payment_method": "PayPal",
-          "transaction_id": "DEF456",
-          "payments_status_id": "Completed"
         }
       ],
       "property": [
@@ -143,19 +135,11 @@
       ],
       "payments": [
         {
-          "id": 3,
-          "subscription_id": 2,
-          "amount": 250,
-          "payment_method": "Credit Card",
-          "transaction_id": "ABC456",
-          "payments_status_id": "Completed"
-        },
-        {
-          "id": 4,
-          "subscription_id": 2,
-          "amount": 250,
-          "payment_method": "Stripe",
-          "transaction_id": "DEF789",
+          "id": 2,
+          "subscription_id": 1,
+          "amount": 180,
+          "payment_method": "PayPal",
+          "transaction_id": "DEF456",
           "payments_status_id": "Completed"
         }
       ],
@@ -221,13 +205,6 @@
                   "type_device_id": "Sensor",
                   "user_id": 3,
                   "area_id": 4
-                },
-                {
-                  "id": 7,
-                  "description": "Garage Door Lock",
-                  "type_device_id": "Door Lock",
-                  "user_id": 3,
-                  "area_id": 4
                 }
               ]
             }
@@ -272,7 +249,7 @@
       ],
       "payments": [
         {
-          "id": 5,
+          "id": 3,
           "subscription_id": 3,
           "amount": 350,
           "payment_method": "Credit Card",
@@ -335,13 +312,6 @@
                   "type_device_id": "Alarm",
                   "user_id": 4,
                   "area_id": 6
-                },
-                {
-                  "id": 10,
-                  "description": "Smart Light Sensor",
-                  "type_device_id": "Sensor",
-                  "user_id": 5,
-                  "area_id": 6
                 }
               ]
             }
@@ -364,235 +334,8 @@
           "user_id": 3
         }
       ]
-    },
-    {
-      "id": 4,
-      "firstname": "Alice",
-      "lastname": "Johnson",
-      "email": "alice.johnson@example.com",
-      "password": "password123",
-      "phone": "3216549870",
-      "dni": "23456789",
-      "rols_id": "Admin",
-      "subscriptions": [
-        {
-          "id": 4,
-          "subscription_plan_id": 1,
-          "user_id": 4,
-          "start_date": "15-09-2024",
-          "end_date": "15-10-2024",
-          "isActive": true
-        }
-      ],
-      "payments": [
-        {
-          "id": 6,
-          "subscription_id": 1,
-          "amount": 180,
-          "payment_method": "PayPal",
-          "transaction_id": "GHI123",
-          "payments_status_id": "Completed"
-        },
-        {
-          "id": 7,
-          "subscription_id": 1,
-          "amount": 180,
-          "payment_method": "Stripe",
-          "transaction_id": "GHI456",
-          "payments_status_id": "Completed"
-        }
-      ],
-      "property": [
-        {
-          "id": 4,
-          "name": "Alice's House",
-          "image_url": "alice_house.jpg",
-          "address": "321 Pine St",
-          "user_id": 4,
-          "events": [
-            {
-              "id": 7,
-              "title": "Bloqueo Asegurado",
-              "description": "Cerradura del garaje asegurada correctamente",
-              "timestamp": "2024-09-26T07:20:00Z",
-              "event_type_id": "Bloqueo Asegurado",
-              "property_id": 4
-            },
-            {
-              "id": 8,
-              "title": "Dispositivo Requiere Mantenimiento",
-              "description": "El sensor de humo en la cocina requiere mantenimiento",
-              "timestamp": "2024-09-26T15:10:00Z",
-              "event_type_id": "Dispositivo Requiere Mantenimiento",
-              "property_id": 4
-            }
-          ],
-          "area": [
-            {
-              "id": 7,
-              "name": "Dining Room",
-              "icon": "icon_dining_room",
-              "color": "#ff6600",
-              "property_id": 4,
-              "device": [
-                {
-                  "id": 11,
-                  "description": "Front Door Camera",
-                  "type_device_id": "Camera",
-                  "user_id": 5,
-                  "area_id": 7
-                }
-              ]
-            },
-            {
-              "id": 8,
-              "name": "Office",
-              "icon": "icon_office",
-              "color": "#ff0066",
-              "property_id": 4,
-              "device": [
-                {
-                  "id": 12,
-                  "description": "Garage Door Camera",
-                  "type_device_id": "Camera",
-                  "user_id": 6,
-                  "area_id": 8
-                },
-                {
-                  "id": 13,
-                  "description": "Smart Lock",
-                  "type_device_id": "Door Lock",
-                  "user_id": 6,
-                  "area_id": 8
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "notifications": [
-        {
-          "id": 7,
-          "type_id": "Bloqueo Asegurado",
-          "content": "Cerradura del garaje asegurada correctamente",
-          "is_read": false,
-          "user_id": 4
-        },
-        {
-          "id": 8,
-          "type_id": "Dispositivo Requiere Mantenimiento",
-          "content": "El sensor de humo en la cocina requiere mantenimiento",
-          "is_read": true,
-          "user_id": 4
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "firstname": "Jake",
-      "lastname": "White",
-      "email": "jake.white@example.com",
-      "password": "password123",
-      "phone": "9876543210",
-      "dni": "34567890",
-      "rols_id": "Admin",
-      "subscriptions": [
-        {
-          "id": 5,
-          "subscription_plan_id": 2,
-          "user_id": 5,
-          "start_date": "15-09-2024",
-          "end_date": "15-10-2024",
-          "isActive": true
-        }
-      ],
-      "payments": [
-        {
-          "id": 8,
-          "subscription_id": 2,
-          "amount": 250,
-          "payment_method": "PayPal",
-          "transaction_id": "GHI789",
-          "payments_status_id": "Completed"
-        },
-        {
-          "id": 9,
-          "subscription_id": 2,
-          "amount": 250,
-          "payment_method": "Stripe",
-          "transaction_id": "JKL123",
-          "payments_status_id": "Completed"
-        }
-      ],
-      "property": [
-        {
-          "id": 5,
-          "name": "Jake's House",
-          "image_url": "jake_house.jpg",
-          "address": "654 Cedar St",
-          "user_id": 5,
-          "events": [
-            {
-              "id": 9,
-              "title": "Sensor Activado",
-              "description": "Sensor de movimiento activado en el Front Yard",
-              "timestamp": "2024-09-27T10:00:00Z",
-              "event_type_id": "Sensor Activado",
-              "property_id": 5
-            },
-            {
-              "id": 10,
-              "title": "Acceso Denegado",
-              "description": "Intento de acceso denegado en la puerta principal",
-              "timestamp": "2024-09-27T13:00:00Z",
-              "event_type_id": "Acceso Denegado",
-              "property_id": 5
-            }
-          ],
-          "area": [
-            {
-              "id": 9,
-              "name": "Garage",
-              "icon": "icon_garage",
-              "color": "#00ffcc",
-              "property_id": 5,
-              "device": [
-                {
-                  "id": 14,
-                  "description": "Security Alarm",
-                  "type_device_id": "Alarm",
-                  "user_id": 5,
-                  "area_id": 9
-                },
-                {
-                  "id": 15,
-                  "description": "Window Sensor",
-                  "type_device_id": "Sensor",
-                  "user_id": 5,
-                  "area_id": 9
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "notifications": [
-        {
-          "id": 9,
-          "type_id": "Sensor Activado",
-          "content": "Sensor de movimiento activado en el Front Yard",
-          "is_read": false,
-          "user_id": 5
-        },
-        {
-          "id": 10,
-          "type_id": "Acceso Denegado",
-          "content": "Intento de acceso denegado en la puerta principal",
-          "is_read": true,
-          "user_id": 5
-        }
-      ]
     }
+    
   ],
   "subscription_plans": [
     {
