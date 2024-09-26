@@ -64,15 +64,15 @@
               "device": [
                 {
                   "id": 1,
-                  "description": "Outdoor Camera",
-                  "type_device_id": "Camera",
+                  "description": "Motion Sensor",
+                  "type_device_id": "Sensor",
                   "user_id": 1,
                   "area_id": 1
                 },
                 {
                   "id": 2,
-                  "description": "Indoor Camera",
-                  "type_device_id": "Camera",
+                  "description": "Door Lock",
+                  "type_device_id": "Door Lock",
                   "user_id": 1,
                   "area_id": 1
                 }
@@ -152,17 +152,9 @@
           "user_id": 2,
           "events": [
             {
-              "id": 3,
-              "title": "Bloqueo Asegurado",
-              "description": "Cerradura de la puerta principal asegurada correctamente",
-              "timestamp": "2024-09-24T14:00:00Z",
-              "event_type_id": "Bloqueo Asegurado",
-              "property_id": 2
-            },
-            {
               "id": 4,
               "title": "Dispositivo Requiere Mantenimiento",
-              "description": "La cámara del patio requiere mantenimiento",
+              "description": "El detector de humo de la cocina requiere mantenimiento",
               "timestamp": "2024-09-25T08:00:00Z",
               "event_type_id": "Dispositivo Requiere Mantenimiento",
               "property_id": 2
@@ -178,15 +170,8 @@
               "device": [
                 {
                   "id": 4,
-                  "description": "Smart Alarm",
+                  "description": "Smoke Detector",
                   "type_device_id": "Alarm",
-                  "user_id": 2,
-                  "area_id": 3
-                },
-                {
-                  "id": 5,
-                  "description": "Door Lock",
-                  "type_device_id": "Door Lock",
                   "user_id": 2,
                   "area_id": 3
                 }
@@ -213,16 +198,9 @@
       ],
       "notifications": [
         {
-          "id": 3,
-          "type_id": "Bloqueo Asegurado",
-          "content": "Cerradura de la puerta principal asegurada correctamente",
-          "is_read": false,
-          "user_id": 2
-        },
-        {
           "id": 4,
           "type_id": "Dispositivo Requiere Mantenimiento",
-          "content": "La cámara del patio requiere mantenimiento",
+          "content": "El detector de humo de la cocina requiere mantenimiento",
           "is_read": true,
           "user_id": 2
         }
@@ -285,15 +263,15 @@
           "area": [
             {
               "id": 5,
-              "name": "Front Yard",
-              "icon": "icon_front_yard",
+              "name": "Back Yard",
+              "icon": "icon_back_yard",
               "color": "#ffff00",
               "property_id": 3,
               "device": [
                 {
                   "id": 8,
-                  "description": "Backyard Camera",
-                  "type_device_id": "Camera",
+                  "description": "Door lock",
+                  "type_device_id": "Door lock",
                   "user_id": 4,
                   "area_id": 5
                 }
@@ -301,15 +279,15 @@
             },
             {
               "id": 6,
-              "name": "Back Yard",
-              "icon": "icon_back_yard",
+              "name": "Garage",
+              "icon": "icon_garage",
               "color": "#00ffff",
               "property_id": 3,
               "device": [
                 {
                   "id": 9,
-                  "description": "Smoke Detector",
-                  "type_device_id": "Alarm",
+                  "description": "Window Lock",
+                  "type_device_id": "Window Lock",
                   "user_id": 4,
                   "area_id": 6
                 }
